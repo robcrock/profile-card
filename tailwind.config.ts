@@ -1,14 +1,14 @@
-import type { Config } from "tailwindcss"
-const { fontFamily } = require("tailwindcss/defaultTheme")
+import type { Config } from "tailwindcss";
+const { fontFamily } = require("tailwindcss/defaultTheme");
 
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -22,7 +22,22 @@ const config = {
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },
+      screens: {
+        mobile: "375px",
+        desktop: "1440px",
+      },
+      fontSize: {
+        body: "18px",
+      },
+      fontWeight: {
+        normal: "400",
+        bold: "700",
+      },
       colors: {
+        "dark-cyan": "hsl(185, 75%, 39%)",
+        "very-dark-blue": "hsl(229, 23%, 23%)",
+        "dark-grayish-blue": "hsl(227, 10%, 46%)",
+        "dark-gray": "hsl(0, 0%, 59%)",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -79,6 +94,6 @@ const config = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+} satisfies Config;
 
-export default config
+export default config;
