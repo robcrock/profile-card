@@ -81,6 +81,6 @@
     url("/images/bg-pattern-bottom.svg");
   background-repeat: no-repeat, no-repeat;
   background-position:
-    left -28vw top -24vh,
-    right -28vw bottom -24vh;
+    right 52vw bottom 35vh,
+    left 48vw top 52vh;
 }
