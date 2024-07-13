@@ -9,7 +9,11 @@ import type { TProfileCardData } from "@/types/profile-card-data";
 export const ProfileCard = ({ header, content }: TProfileCardData) => {
   return (
     <Card className="flex h-[374px] w-[350px] flex-col items-center overflow-hidden border-none shadow-[0px_50px_100px_-20px_#08465E50]">
-      <Image src={bg_pattern_card} alt={"card background image"} />
+      <Image
+        priority={true}
+        src={bg_pattern_card}
+        alt={"card background image"}
+      />
       <ProfileCardHeader
         imageUrl={header?.imageUrl}
         name={header?.name}
