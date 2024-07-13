@@ -13,7 +13,7 @@ export const ProfileCardHeader = ({
     <CardHeader className="h-[145px] p-0">
       <section className="flex flex-col items-center gap-6 pb-10">
         <Avatar className="-mt-[54px] h-[96px] w-[96px] border-[5px] border-white">
-          <AvatarImage src={imageUrl} />
+          <AvatarImage src={imageUrl} alt="profile image" />
           <AvatarFallback>{generateInitials(name)}</AvatarFallback>
         </Avatar>
         <div className="flex flex-col items-center gap-2">
